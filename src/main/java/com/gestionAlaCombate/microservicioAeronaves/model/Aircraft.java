@@ -1,7 +1,9 @@
 package com.gestionAlaCombate.microservicioAeronaves.model;
 
 
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection =  "aircrafts")
 public class Aircraft {
     private String id;
     private String model;
