@@ -28,10 +28,9 @@ public class AircraftController {
     @PostMapping
     public Aircraft addAircraft(@RequestBody Aircraft aircraft) { return service.addAircraft(aircraft); }
 
-    // Método para actualizar un piloto
     @CrossOrigin(origins = "*")
     @PutMapping("/{id}")
-    public Aircraft updatePilot(@PathVariable String id, @RequestBody Aircraft aircraft) {
+    public Aircraft updateAircraft(@PathVariable String id, @RequestBody Aircraft aircraft) {
         return service.updateAircraft(id, aircraft);
     }
 
